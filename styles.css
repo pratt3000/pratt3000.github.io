@@ -178,4 +178,33 @@ body {
 
 .menu button:hover {
     background-color: #005f75; /* Darken the color on hover */
+}
+
+.custom-list-timeline {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%; /* Ensure your list takes up the full width of its container */
+}
+
+.custom-list-timeline li {
+  display: flex; /* Use flexbox to lay out inner elements */
+  align-items: center; /* Center items along the cross axis */
+  justify-content: space-between; /* Justify content with space between items */
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
+.emoji-timeline {
+  margin-right: 10px; /* Create some space between the emoji and the text */
+}
+
+.text-content {
+  flex-grow: 1; /* Allow text content to take up all available space */
+  margin-right: 15px; /* Create some space between the text and the date */
+}
+
+.date-timeline {
+  white-space: nowrap; /* Keep dates on one line */
+  color: #555;
+  font-weight: bold;
+}
 

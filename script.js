@@ -8,3 +8,10 @@ function showSection(sectionId) {
     // Show the selected section
     document.getElementById(sectionId).style.display = 'block';
 }
+
+$(function () {
+    $("#timeline").load("timeline.html");
+    $("#projects").load("projects.html");
+    $("#work-experience").load("work-experience.html");
+    $("#education").load("education.html");
+});
