@@ -6,12 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Experience Timeline</title>
 		<meta charset="UTF-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>Prathamesh Sonawane</title>
-	    <link rel="stylesheet" href="styles.css">
-	    <!-- Add other frameworks or libraries if needed -->
-	    <script src="script.js" defer></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Prathamesh Sonawane</title>
+		<link rel="stylesheet" href="styles.css">
+		<!-- Add other frameworks or libraries if needed -->
+		<script src="script.js" defer></script>
 	</head>
 
 	<body>
@@ -45,25 +45,47 @@
 				<button onclick="showSection('work-experience')">Work Experience</button>
 				<button onclick="showSection('education')">Education</button>
 			</div>
-			
+
 			<div id="timeline" class="content-section">
-			    <!-- timeline Section -->
-			    <!-- Use card structure for each project as before, full timeline -->
+				<!-- timeline Section -->
+				<div class="year-container">
+					<h2 class="year-title">2021</h2>
+					<!-- Project 1 -->
+					<div class="card">
+						<div class="card-image">
+							<img src="images/Self-Supervised_Visual_Representation_Learning_Using_Lightweight_Architectures.png" alt="Project Image">
+						</div>
+						<div class="card-content">
+							<h3 class="project-title">
+								<a href="https://arxiv.org/pdf/2110.11160.pdf">Self-Supervised Visual Representation Learning Using Lightweight Architectures</a>
+							</h3>
+							<p class="members">
+								<strong>Prathamesh Sonawane</strong>,
+								<a href="https://www.linkedin.com/in/sparshdrolia/">Sparsh Drolia</a>,
+								<a href="https://www.linkedin.com/in/snshamsi/">Saqib Shamsi</a>,
+								<a href="bhargav_jain@whirlpool.com">Bhargav Jain</a>
+							</p>
+							<p class="description">We study the performance of various self-supervised techniques on lightweight architectures.</p>
+						</div>
+					</div>
+					<!-- You can continue to add more projects here for the year 2021 -->
+				</div>
+				<!-- Use card structure for each project as before, full timeline -->
 			</div>
-			
+
 			<div id="projects" class="content-section">
-			    <!-- Projects Section -->
-			    <!-- Use card structure for each project as before, include the new projects from your resume -->
+				<!-- Projects Section -->
+				<!-- Use card structure for each project as before, include the new projects from your resume -->
 			</div>
-			
+
 			<div id="work-experience" class="content-section" style="display: none;">
-			    <!-- Work Experience Section -->
-			    <!-- Structure similar to the Projects section, but fill in details from your work experience -->
+				<!-- Work Experience Section -->
+				<!-- Structure similar to the Projects section, but fill in details from your work experience -->
 			</div>
-			
+
 			<div id="education" class="content-section" style="display: none;">
-			    <!-- Education Section -->
-			    <!-- Provide details about your education background in a card-like format -->
+				<!-- Education Section -->
+				<!-- Provide details about your education background in a card-like format -->
 			</div>
 
 		</div> <!-- End of container div -->
