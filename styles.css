@@ -165,20 +165,33 @@ body {
   /* Adjusting the line-height for readability */
 }
 
-.menu button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #008CBA; /* Choose your color */
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.menu {
+  display: flex;
+  justify-content: space-between; /* This will handle the equal spacing */
+  border-bottom: 1px solid #ccc; /* This creates the illusion of "tabs" */
 }
 
-.menu button:hover {
-    background-color: #005f75; /* Darken the color on hover */
+.tab-button {
+  background-color: transparent; /* Makes background transparent */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-bottom: 2px solid transparent; /* Transparent border, will change color when active */
 }
+
+/* Change background color of buttons on hover */
+.tab-button:hover {
+  border-bottom: 2px solid #008CBA; /* Shows a blue bottom border on hover */
+}
+
+/* Create an active/current tablink class */
+.tab-button.active {
+  border-bottom: 2px solid #008CBA; /* Blue bottom border for the active tab */
+}
+
 
 .custom-list-timeline {
   list-style-type: none;
