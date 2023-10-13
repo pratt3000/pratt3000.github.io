@@ -24,6 +24,6 @@ $(document).ready(function(){
 $(function () {
     $("#timeline").load("timeline.html");
     $("#projects").load("projects.html");
-    $("#work-experience").load("work-experience.html");
+    $("#work-experience").load("workex.html");
     $("#education").load("education.html");
 });

@@ -52,7 +52,7 @@ body {
 
 .profile-links a {
   text-decoration: none;
-  margin: 0 10px;
+  margin: 10 10px;
   /* increased margin for better visibility */
   color: blue;
   transition: color 0.3s ease;
