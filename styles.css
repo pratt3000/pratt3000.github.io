@@ -155,29 +155,18 @@ body {
   line-height: 1.6;
   /* Adjusting the line-height for readability */
 }
-/* CSS for Modern Full-Width Menu */
-.modern-menu {
-    display: flex;
-    justify-content: space-around; /* evenly distribute menu items */
-    align-items: center;
-    width: 100%;
-    background-color: #333; /* you can change this color to suit your design */
-    padding: 10px 0; /* add some vertical padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional: add a subtle shadow for depth */
+
+.menu button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008CBA; /* Choose your color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.menu-item {
-    color: #fff; /* you can change this color to suit your design */
-    text-transform: uppercase; /* makes text uppercase */
-    letter-spacing: 1px; /* increases spacing between letters */
-    font-weight: 700; /* makes font bold */
-    cursor: pointer; /* indicates the item is clickable */
-    transition: background-color 0.3s ease; /* optional: for smooth color transition */
-}
-
-.menu-item:hover {
-    background-color: #555; /* menu item background color on hover */
-    border-radius: 5px; /* optional: if you want rounded corners on hover */
-    padding: 10px 20px; /* optional: if you want the items to enlarge a bit on hover */
-}
+.menu button:hover {
+    background-color: #005f75; /* Darken the color on hover */
 
