@@ -1,152 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Experience Timeline</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .year-container {
-        margin-bottom: 20px;
-    }
-    .year-title {
-        margin-bottom: 10px;
-        font-size: 24px;
-    }
-    .card {
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-        padding: 10px;
-        border: 1px solid #ddd; /* Add border to the card */
-        border-radius: 5px; /* Optional: for rounded corners */
-    }
-    .card-image {
-        margin-right: 20px;
-    }
-    .card-image img {
-        width: 160px; /* or you can use 100% for responsive design */
-        height: 160px;
-        border-radius: 5px; /* Optional: for rounded corners */
-    }
-    .card-content {
-        width: 75%;
-    }
-    .card-content a {
-        text-decoration: none;
-        color: blue;
-    }
-    .card-content a:hover {
-        text-decoration: underline;
-    }
-    .project-title {
-        color: black;
-        font-size: 18px;
-        margin: 0;
-    }
-    .members {
-        margin: 5px 0;
-        font-size: 16px;
-    }
-    .description {
-        font-size: 14px;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    .container {
-        max-width: 800px;
-        margin: auto;
-        padding: 10px;
-        text-align: center;
-    }
-    .profile-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        text-align: left;
-    }
-    .profile-header img {
-        border-radius: 50%; /* Creates the circular image */
-        width: 100%;
-        max-width: 150px; /* Adjust as needed */
-    }
-    .profile-header div {
-        width: 60%; /* Adjust as needed */
-    }
-    .profile-links a {
-        text-decoration: none;
-        margin: 0 5px;
-        color: blue;
-    }
-    .profile-links a:hover {
-        text-decoration: underline;
-    }
-    .research {
-        padding: 20px;
-        text-align: left;
-    }
-    .research heading {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-</style>
-</head>
-<body>
-    
-<div class="container">
-    <div class="profile-header">
-        <div>
-            <p><name>Prathamesh Sonawane</name></p>
-            <p>I am currently pursuing my Masters in CS from University of Illinois Urbana-Champaign. (Graduation: December 2023)</p>
-            <p class="profile-links">
-                <a href="mailto:pks10@illinois.edu">Email</a> |
-                <a href="https://drive.google.com/file/d/1ORefrRi_QTS9Wteup7KuTjQAXhROvqm2/view?usp=drive_link" target="_blank">CV</a> |
-                <a href="https://scholar.google.com/citations?user=FKbzl8IAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-                <a href="https://github.com/pratt3000/" target="_blank">Github</a> |
-                <a href="https://www.linkedin.com/in/pratt3000/" target="_blank">LinkedIn</a>
-            </p>
-        </div>
-        <div>
-            <a href="images/Prathamesh.jpeg"><img alt="profile photo" src="images/prathamesh_circle.png" class="hoverZoomLink"></a>
-        </div>
-    </div>
 
-    <div class="research">
-        <heading>Research</heading>
-        <p>I'm interested in generative AI in computer vision, and Natural Language Processing.</p>
-    </div>
-</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Experience Timeline</title>
+		<style>
+			/* General body styling */
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+				/* Optional: adds a slight grey background */
+			}
 
-<div class="year-container">
-    <h2 class="year-title">2021</h2>
-    <!-- Project 1 -->
-    <div class="card">
-        <div class="card-image">
-            <img src="images/Self-Supervised_Visual_Representation_Learning_Using_Lightweight_Architectures.png" alt="Project Image">
-        </div>
-        <div class="card-content">
-            <p class="project-title">
-                <a href="https://arxiv.org/pdf/2110.11160.pdf">Self-Supervised Visual Representation Learning Using Lightweight Architectures</a>
-            </p>
-            <p class="members">
-                <strong>Prathamesh Sonawane</strong>,
-                <a href="https://www.linkedin.com/in/sparshdrolia/">Sparsh Drolia</a>,
-                <a href="https://www.linkedin.com/in/snshamsi/">Saqib Shamsi</a>, 
-                <a href="bhargav_jain@whirlpool.com">Bhargav Jain</a>
-            </p>
-            <p class="description">We study the performance of various self-supervised techniques on light weight architecctures.</p>
-        </div>
-    </div>
-    <!-- Add more projects here -->
-</div>
+			/* Container for the whole content for proper alignment and margin */
+			.container {
+				width: 80%;
+				/* takes 80% of the viewport's width */
+				max-width: 1200px;
+				/* maximum width for larger screens */
+				margin: auto;
+				/* centralizes the content */
+				padding: 20px;
+				background-color: #fff;
+				/* white background */
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				/* Optional: adds a slight shadow for depth */
+			}
 
-<!-- Add more years and projects similarly -->
+			/* Styles for the profile header */
+			.profile-header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-bottom: 20px;
+				/* increased spacing */
+				border-bottom: 1px solid #eee;
+				/* adds a line to separate the header from the content */
+				margin-bottom: 20px;
+				/* spacing from the next section */
+			}
 
-</body>
+			.profile-header img {
+				border-radius: 50%;
+				width: 150px;
+				/* fixed width */
+				height: 150px;
+				/* fixed height */
+				object-fit: cover;
+				/* ensures the image covers the frame */
+			}
+
+			.profile-header div {
+				width: calc(100% - 170px);
+				/* calculates the width excluding the image */
+			}
+
+			.profile-links a {
+				text-decoration: none;
+				margin: 0 10px;
+				/* increased margin for better visibility */
+				color: blue;
+				transition: color 0.3s ease;
+				/* Optional: smooth color transition */
+			}
+
+			.profile-links a:hover {
+				text-decoration: underline;
+				color: darkblue;
+				/* Optional: change color slightly for effect */
+			}
+
+			.research {
+				padding: 20px 0;
+				margin-bottom: 20px;
+				/* Extra spacing before the next section starts */
+			}
+
+			.year-container {
+				margin-bottom: 30px;
+				/* Extra spacing for better separation between years */
+			}
+
+			.year-title {
+				font-size: 24px;
+				color: #333;
+				/* Optional: dark grey for softer contrast */
+				margin-bottom: 20px;
+				/* Increased spacing */
+			}
+
+			/* Styles for the cards */
+			.card {
+				display: flex;
+				align-items: flex-start;
+				/* aligns items to the start of the card */
+				margin-bottom: 20px;
+				/* Increased spacing */
+				padding: 20px;
+				/* Increased padding for better spacing */
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				transition: box-shadow 0.3s ease;
+				/* Optional: smooth shadow transition */
+			}
+
+			.card:hover {
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+				/* Optional: adds a shadow effect on hover */
+			}
+
+			.card-image img {
+				width: 160px;
+				height: 160px;
+				border-radius: 5px;
+				object-fit: cover;
+				/* ensures the images fit nicely into the frame */
+			}
+
+			.card-content {
+				width: calc(100% - 180px);
+				/* calculates the width excluding the image, considering margins */
+				padding-left: 20px;
+				/* space between image and text */
+			}
+
+			.card-content a {
+				color: blue;
+				transition: color 0.3s ease;
+				/* Optional: smooth color transition */
+			}
+
+			.card-content a:hover {
+				color: darkblue;
+				/* Optional: change color slightly for effect */
+			}
+
+			.project-title {
+				margin: 0;
+				margin-bottom: 10px;
+				/* spacing between title and members */
+				font-size: 18px;
+				font-weight: 600;
+				/* making the title a bit bolder */
+			}
+
+			.members {
+				margin: 0;
+				margin-bottom: 10px;
+				/* spacing between members and description */
+				font-size: 16px;
+				color: #555;
+				/* Optional: softer color for less emphasis */
+			}
+
+			.description {
+				font-size: 14px;
+				color: #666;
+				/* Optional: even softer color for less emphasis */
+				line-height: 1.6;
+				/* Adjusting the line-height for readability */
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- Profile section -->
+			<div class="profile-header">
+				<div>
+					<p>
+						<name>Prathamesh Sonawane</name>
+					</p>
+					<p>I am currently pursuing my Masters in CS from University of Illinois Urbana-Champaign. (Graduation: December 2023)</p>
+					<p class="profile-links">
+						<a href="mailto:pks10@illinois.edu">Email</ </a> | <a href="https://drive.google.com/file/d/1ORefrRi_QTS9Wteup7KuTjQAXhROvqm2/view?usp=drive_link" target="_blank">CV</a> |
+						<a href="https://scholar.google.com/citations?user=FKbzl8IAAAAJ&hl=en" target="_blank">Google Scholar</a> |
+						<a href="https://github.com/pratt3000/" target="_blank">Github</a> |
+						<a href="https://www.linkedin.com/in/pratt3000/" target="_blank">LinkedIn</a>
+					</p>
+				</div>
+				<img alt="profile photo" src="images/prathamesh_circle.png" class="hoverZoomLink">
+			</div>
+
+			<!-- Research Interest -->
+			<div class="research">
+				<h2>Research</h2> <!-- Changed from <heading> to <h2> for semantic correctness -->
+				<p>I'm interested in generative AI in computer vision, and Natural Language Processing.</p>
+			</div>
+
+			<!-- Experience Timeline -->
+			<div class="year-container">
+				<h2 class="year-title">2021</h2>
+				<!-- Project 1 -->
+				<div class="card">
+					<div class="card-image">
+						<img src="images/Self-Supervised_Visual_Representation_Learning_Using_Lightweight_Architectures.png" alt="Project Image">
+					</div>
+					<div class="card-content">
+						<h3 class="project-title">
+							<a href="https://arxiv.org/pdf/2110.11160.pdf">Self-Supervised Visual Representation Learning Using Lightweight Architectures</a>
+						</h3>
+						<p class="members">
+							<strong>Prathamesh Sonawane</strong>,
+							<a href="https://www.linkedin.com/in/sparshdrolia/">Sparsh Drolia</a>,
+							<a href="https://www.linkedin.com/in/snshamsi/">Saqib Shamsi</a>,
+							<a href="bhargav_jain@whirlpool.com">Bhargav Jain</a>
+						</p>
+						<p class="description">We study the performance of various self-supervised techniques on lightweight architectures.</p>
+					</div>
+				</div>
+				<!-- You can continue to add more projects here for the year 2021 -->
+			</div>
+
+			<!-- Add more years and projects similarly -->
+
+		</div> <!-- End of container div -->
+	</body>
+
 </html>
