@@ -96,6 +96,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: box-shadow 0.3s ease;
+  justify-content: space-between; 
   /* Optional: smooth shadow transition */
 }
 
@@ -116,18 +117,26 @@ body {
   width: calc(100% - 180px);
   /* calculates the width excluding the image, considering margins */
   padding-left: 20px;
+  flex: 1;
   /* space between image and text */
 }
 
 .card-content a {
   color: blue;
   transition: color 0.3s ease;
+  
   /* Optional: smooth color transition */
 }
 
 .card-content a:hover {
   color: darkblue;
   /* Optional: change color slightly for effect */
+}
+
+.date-section {
+    margin-left: 20px; /* This will give some space between your content and the date */
+    color: #555; /* Add color styling as per your preference */
+    font-weight: bold;
 }
 
 .project-title {
