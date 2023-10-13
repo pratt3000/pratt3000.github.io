@@ -155,3 +155,17 @@ body {
   line-height: 1.6;
   /* Adjusting the line-height for readability */
 }
+.menu button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008CBA; /* Choose your color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #005f75; /* Darken the color on hover */
+}
