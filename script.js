@@ -26,4 +26,5 @@ $(function () {
     $("#projects").load("projects.html");
     $("#work-experience").load("workex.html");
     $("#education").load("education.html");
+    $("#misc").load("misc.html");
 });

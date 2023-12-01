@@ -2,67 +2,61 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Experience Timeline</title>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Prathamesh Sonawane</title>
-	<link rel="stylesheet" href="styles.css">
-	<!-- Add other frameworks or libraries if needed -->
-	<script src="script.js" defer></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Experience Timeline</title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Prathamesh Sonawane</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- Add other frameworks or libraries if needed -->
+    <script defer src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-
-	<div class="container">
-		<!-- Profile section -->
-		<div class="profile-header">
-			<div>
-				<p>
-				<h1>Prathamesh Sonawane</h1>
-				</p>
-
-				<p class="profile-links">
-					<a href="mailto:pks10@illinois.edu">Email</a> | <a
-						href="https://drive.google.com/file/d/1ORefrRi_QTS9Wteup7KuTjQAXhROvqm2/view?usp=drive_link"
-						target="_blank">CV</a> |
-					<a href="https://scholar.google.com/citations?user=FKbzl8IAAAAJ&hl=en" target="_blank">Google
-						Scholar</a> |
-					<a href="https://github.com/pratt3000/" target="_blank">Github</a> |
-					<a href="https://www.linkedin.com/in/pratt3000/" target="_blank">LinkedIn</a>
-				</p>
-
-				<p>I am currently pursuing my Masters in CS from University of Illinois Urbana-Champaign. (Graduation:
-					December 2023)</p>
-			</div>
-			<img alt="profile photo" src="images/pp.jpg" class="hoverZoomLink">
-		</div>
-
-		<!-- Research Interest -->
-		<div class="research">
-			<h2>Research Interests</h2> <!-- Changed from <heading> to <h2> for semantic correctness -->
-			<p>I'm interested in generative AI in computer vision, and Natural Language Processing.</p>
-		</div>
-
-		<div class="menu">
-			<container class="button-container">
-			<button class="tab-button" onclick="showSection('timeline')">Timeline</button>
-			<button class="tab-button" onclick="showSection('education')">Education</button>
-			<button class="tab-button" onclick="showSection('work-experience')">Work Experience</button>
-			<button class="tab-button" onclick="showSection('projects')">Projects</button>
-			</container>
-		</div>
-
-
-		<div id="timeline" class="content-section"></div>
-		<div id="projects" class="content-section"></div>
-		<div id="work-experience" class="content-section"></div>
-		<div id="education" class="content-section"></div>
-
-	</div> <!-- End of container div -->
+<div class="container">
+    <!-- Profile section -->
+    <div class="profile-header">
+        <div>
+            <p>
+            <h1>Prathamesh Sonawane</h1>
+            </p>
+            <p class="profile-links">
+                <a href="mailto:pks10@illinois.edu">Email</a> | <a
+                    href="https://drive.google.com/file/d/1ORefrRi_QTS9Wteup7KuTjQAXhROvqm2/view?usp=drive_link"
+                    target="_blank">CV</a> |
+                <a href="https://scholar.google.com/citations?user=FKbzl8IAAAAJ&hl=en" target="_blank">Google
+                    Scholar</a> |
+                <a href="https://github.com/pratt3000/" target="_blank">Github</a> |
+                <a href="https://www.linkedin.com/in/pratt3000/" target="_blank">LinkedIn</a>
+            </p>
+            <p>I am currently pursuing my Masters in CS from University of Illinois Urbana-Champaign. (Graduation:
+                December 2023)</p>
+        </div>
+        <img alt="profile photo" class="hoverZoomLink" src="images/pp.jpg">
+    </div>
+    <!-- Research Interest -->
+    <div class="research">
+        <h2>Research Interests</h2> <!-- Changed from <heading> to <h2> for semantic correctness -->
+        <p>I'm interested in generative AI in computer vision, and Natural Language Processing.</p>
+    </div>
+    <div class="menu">
+        <container class="button-container">
+            <button class="tab-button" onclick="showSection('timeline')">Timeline</button>
+            <button class="tab-button" onclick="showSection('work-experience')">Work Experience</button>
+            <button class="tab-button" onclick="showSection('projects')">Projects</button>
+            <button class="tab-button" onclick="showSection('education')">Education</button>
+            <button class="tab-button" onclick="showSection('misc')">Misc</button>
+        </container>
+    </div>
+    <div class="content-section" id="timeline"></div>
+    <div class="content-section" id="projects"></div>
+    <div class="content-section" id="work-experience"></div>
+    <div class="content-section" id="education"></div>
+    <div class="content-section" id="misc"></div>
+</div> <!-- End of container div -->
 </body>
 
 </html>
