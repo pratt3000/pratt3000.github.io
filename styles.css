@@ -4,22 +4,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  /* Optional: adds a slight grey background */
 }
 
-/* Container for the whole content for proper alignment and margin */
 .container {
   width: 70%;
-  /* takes 80% of the viewport's width */
   max-width: 1200px;
-  /* maximum width for larger screens */
   margin: auto;
-  /* centralizes the content */
   padding: 20px;
   background-color: #fff;
-  /* white background */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Optional: adds a slight shadow for depth */
 }
 
 /* Styles for the profile header */
@@ -79,7 +72,6 @@ body {
 .year-title {
   font-size: 24px;
   color: #333;
-  /* Optional: dark grey for softer contrast */
   margin-bottom: 20px;
   /* Increased spacing */
 }
@@ -97,7 +89,6 @@ body {
   border-radius: 5px;
   transition: box-shadow 0.3s ease;
   justify-content: space-between; 
-  /* Optional: smooth shadow transition */
 }
 
 .card:hover {
@@ -118,19 +109,15 @@ body {
   /* calculates the width excluding the image, considering margins */
   padding-left: 20px;
   flex: 1;
-  /* space between image and text */
 }
 
 .card-content a {
   color: blue;
   transition: color 0.3s ease;
-  
-  /* Optional: smooth color transition */
 }
 
 .card-content a:hover {
   color: darkblue;
-  /* Optional: change color slightly for effect */
 }
 
 .date-section {
@@ -154,13 +141,11 @@ body {
   /* spacing between members and description */
   font-size: 16px;
   color: #555;
-  /* Optional: softer color for less emphasis */
 }
 
 .description {
   font-size: 14px;
   color: #666;
-  /* Optional: even softer color for less emphasis */
   line-height: 1.6;
   /* Adjusting the line-height for readability */
 }
@@ -206,6 +191,11 @@ body {
   margin-bottom: 10px; /* Add some space between list items */
 }
 
+.custom-list-misc li {
+    justify-content: space-between; /* Justify content with space between items */
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
 .emoji-timeline {
   margin-right: 10px; /* Create some space between the emoji and the text */
 }
@@ -216,7 +206,7 @@ body {
 }
 
 .date-timeline {
-  white-space: nowrap; /* Keep dates on one line */
+  white-space: nowrap;
   color: #555;
   font-weight: bold;
 }
