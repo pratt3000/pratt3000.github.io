@@ -21,70 +21,54 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
-  /* increased spacing */
   border-bottom: 1px solid #eee;
-  /* adds a line to separate the header from the content */
   margin-bottom: 20px;
-  /* spacing from the next section */
 }
 
 .profile-header img {
   border-radius: 50%;
   width: 150px;
-  /* fixed width */
   height: 150px;
-  /* fixed height */
   object-fit: cover;
-  /* ensures the image covers the frame */
 }
 
 .profile-header div {
   width: calc(100% - 170px);
-  /* calculates the width excluding the image */
 }
 
 .profile-links a {
   text-decoration: none;
   margin: 10 10px;
-  /* increased margin for better visibility */
   color: blue;
   transition: color 0.3s ease;
-  /* Optional: smooth color transition */
 }
 
 .profile-links a:hover {
   text-decoration: underline;
   color: darkblue;
-  /* Optional: change color slightly for effect */
 }
 
 .research {
   padding: 20px 0;
   margin-bottom: 20px;
-  /* Extra spacing before the next section starts */
 }
 
 .year-container {
   margin-bottom: 30px;
-  /* Extra spacing for better separation between years */
 }
 
 .year-title {
   font-size: 24px;
   color: #333;
   margin-bottom: 20px;
-  /* Increased spacing */
 }
 
 /* Styles for the cards */
 .card {
   display: flex;
   align-items: flex-start;
-  /* aligns items to the start of the card */
   margin-bottom: 20px;
-  /* Increased spacing */
   padding: 20px;
-  /* Increased padding for better spacing */
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: box-shadow 0.3s ease;
@@ -93,7 +77,6 @@ body {
 
 .card:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  /* Optional: adds a shadow effect on hover */
 }
 
 .card-image img {
@@ -101,12 +84,10 @@ body {
   height: 160px;
   border-radius: 5px;
   object-fit: cover;
-  /* ensures the images fit nicely into the frame */
 }
 
 .card-content {
   width: calc(100% - 180px);
-  /* calculates the width excluding the image, considering margins */
   padding-left: 20px;
   flex: 1;
 }
@@ -121,24 +102,21 @@ body {
 }
 
 .date-section {
-    margin-left: 20px; /* This will give some space between your content and the date */
-    color: #555; /* Add color styling as per your preference */
+    margin-left: 20px;
+    color: #555;
     font-weight: bold;
 }
 
 .project-title {
   margin: 0;
   margin-bottom: 10px;
-  /* spacing between title and members */
   font-size: 18px;
   font-weight: 600;
-  /* making the title a bit bolder */
 }
 
 .members {
   margin: 0;
   margin-bottom: 10px;
-  /* spacing between members and description */
   font-size: 16px;
   color: #555;
 }
@@ -147,62 +125,61 @@ body {
   font-size: 14px;
   color: #666;
   line-height: 1.6;
-  /* Adjusting the line-height for readability */
 }
 
 .menu {
   display: flex;
-  justify-content: space-between; /* This will handle the equal spacing */
-  border-bottom: 1px solid #ccc; /* This creates the illusion of "tabs" */
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
 }
 
 .tab-button {
-  background-color: transparent; /* Makes background transparent */
+  background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
-  border-bottom: 2px solid transparent; /* Transparent border, will change color when active */
+  border-bottom: 2px solid transparent;
 }
 
 /* Change background color of buttons on hover */
 .tab-button:hover {
-  border-bottom: 2px solid #008CBA; /* Shows a blue bottom border on hover */
+  border-bottom: 2px solid #008CBA;
 }
 
 /* Create an active/current tablink class */
 .tab-button.active {
-  border-bottom: 2px solid #008CBA; /* Blue bottom border for the active tab */
+  border-bottom: 2px solid #008CBA;
 }
 
 
 .custom-list-timeline {
   list-style-type: none;
   padding-left: 0;
-  width: 100%; /* Ensure your list takes up the full width of its container */
+  width: 100%;
 }
 
 .custom-list-timeline li {
-  display: flex; /* Use flexbox to lay out inner elements */
-  align-items: center; /* Center items along the cross axis */
-  justify-content: space-between; /* Justify content with space between items */
-  margin-bottom: 10px; /* Add some space between list items */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .custom-list-misc li {
-    justify-content: space-between; /* Justify content with space between items */
-  margin-bottom: 10px; /* Add some space between list items */
+    justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .emoji-timeline {
-  margin-right: 10px; /* Create some space between the emoji and the text */
+  margin-right: 10px;
 }
 
 .text-content {
-  flex-grow: 1; /* Allow text content to take up all available space */
-  margin-right: 15px; /* Create some space between the text and the date */
+  flex-grow: 1;
+  margin-right: 15px;
 }
 
 .date-timeline {
