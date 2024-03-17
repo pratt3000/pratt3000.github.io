@@ -11,8 +11,18 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  /* background-color: #fff; */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the profile header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
 }
 
 .profile-img {
@@ -22,32 +32,20 @@ body {
   object-fit: cover;
 }
 
-.icon{
-  width: 35px; /* adjust this value to your desired width */
-  height: 35px; /* maintain aspect ratio */
-  padding: 5px;
-  /* border-radius: 80%; */
-}
-
-.profile-header a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Change link color to black */
-}
-
-/* Styles for the profile header */
-.profile-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 10px;
-}
-
 .profile-header div {
   width: calc(100% - 170px);
 }
 
+.icon{
+  width: 40px; /* adjust this value to your desired width */
+  height: 40px; /* maintain aspect ratio */
+  border-radius: 50%;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
 
 .research {
   padding: 20px 0;
