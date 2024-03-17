@@ -11,22 +11,33 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  /* background-color: #fff; */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Styles for the profile header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2dede;
+}
+
+.profile-main-association {
+  font-size: 18px;
+  margin-top: -13px;
+  color: #757171;
+}
+
+.profile-banner {
+  color: rgb(213, 79, 56);
 }
 
 .profile-img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-}
-
-.icon{
-  width: 35px; /* adjust this value to your desired width */
-  height: 35px; /* maintain aspect ratio */
-  padding: 5px;
-  /* border-radius: 80%; */
+  margin-right: 20px;
 }
 
 .profile-header a {
@@ -34,23 +45,14 @@ body {
   color: black; /* Change link color to black */
 }
 
-/* Styles for the profile header */
-.profile-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 10px;
+.icon{
+  width: 35px; /* adjust this value to your desired width */
+  height: 35px; /* maintain aspect ratio */
+  padding: 5px;
 }
-
-.profile-header div {
-  width: calc(100% - 170px);
-}
-
 
 .research {
-  padding: 20px 0;
+  padding: 15px 0;
   margin-bottom: 20px;
 }
 
