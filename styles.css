@@ -50,6 +50,11 @@ body {
   height: 35px; /* maintain aspect ratio */
   padding: 5px;
 }
+.resume-icon{
+  width: 50; /* adjust this value to your desired width */
+  height: 35px; /* maintain aspect ratio */
+  padding: 5px;
+}
 
 .research {
   padding: 15px 0;
