@@ -110,13 +110,16 @@ body {
   flex: 1;
 }
 
-.card-content a {
-  color: blue;
+a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 20%;
+  color: lab(44.6935 5.6769 -54.1734);
   transition: color 0.3s ease;
 }
 
-.card-content a:hover {
-  color: darkblue;
+a:hover {
+  color: #555555;
 }
 
 .date-section {
