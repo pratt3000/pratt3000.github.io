@@ -4,6 +4,16 @@ function showSection(sectionId) {
     $('#' + sectionId).show();
     $('button[onclick="showSection(\'' + sectionId + '\')"]').addClass('active');
     $('#mobile-nav-select').val(sectionId);
+
+    var anchor = document.getElementById('menu-anchor');
+    if (anchor) {
+        var targetTop = anchor.getBoundingClientRect().top + window.scrollY;
+        if (window.scrollY > targetTop) {
+            $('html, body').animate({
+                scrollTop: targetTop
+            }, 800);
+        }
+    }
 }
 
 $(document).ready(function () {

@@ -93,9 +93,9 @@ body {
   justify-content: space-between; 
 }
 
-.card:hover {
+/* .card:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .card-image img {
   width: 160px;
@@ -185,6 +185,10 @@ a:hover {
 
 .mobile-nav {
   display: none;
+}
+
+.content-section {
+  min-height: 100vh;
 }
 
 .content-section > .card:first-child {
