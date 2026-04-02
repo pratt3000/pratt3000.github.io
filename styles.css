@@ -256,6 +256,10 @@ body {
     padding-bottom: 30px;
   }
 
+  .profile-header h1 {
+    line-height: 1.2;
+  }
+
   .profile-img {
     margin-right: 0;
     margin-bottom: 15px;
