@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  overflow-x: hidden;
 }
 
 .container {
@@ -150,6 +149,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -164,9 +164,10 @@ a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: -50vw;
-  right: -50vw;
   bottom: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
