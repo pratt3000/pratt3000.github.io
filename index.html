@@ -9,6 +9,7 @@
     <!-- Yes I know... sue me -->
     <script defer src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/lucide@0.292.0"></script>
 </head>
 
 <body>
@@ -19,26 +20,26 @@
         <div>
             <h1>Prathamesh Sonawane</h1>
             <p class="profile-main-association">Machine Learning Engineer at Doordash</p>
-            <div>
+            <div class="contact-links">
                 <a target="_blank" href="mailto:pratt3000@gmail.com" title="email me!">
-                    <img class="icon" src="images/icons/gmail_logo.svg">
+                    <i data-lucide="mail" class="contact-icon"></i>
                 </a>
                 <a target="_blank" href="https://scholar.google.com/citations?user=FKbzl8IAAAAJ&hl=en" title="Google Scholar">
-                    <img class="icon" src="images/icons/google_scholar_logo.svg">
+                    <i data-lucide="graduation-cap" class="contact-icon"></i>
                 </a>
                 <a target="_blank" href="https://github.com/pratt3000/" title="Github">
-                    <img class="icon" src="images/icons/github_logo.svg">
+                    <i data-lucide="github" class="contact-icon"></i>
                 </a>
                 <a target="_blank" href="https://www.linkedin.com/in/pratt3000/" title="Linkedin">
-                    <img class="icon" src="images/icons/linkedin_logo.svg">
+                    <i data-lucide="linkedin" class="contact-icon"></i>
                 </a>
                 <a target="_blank" href="https://drive.google.com/file/d/16n6I9I0vWYIg96V9W8s0uWD1FONHlQuH/view?usp=sharing" title="Resume">
-                    <img class="resume-icon" src="images/icons/resume.png">
+                    <i data-lucide="file-text" class="contact-icon"></i>
                 </a>
             </div>
-            <h4 class="profile-banner">
-                Feel free to reach out if you want to talk about anything! :)
-            </h4>
+            <p class="profile-banner">
+                Feel free to reach out if you want to talk about anything!
+            </p>
         </div>
     </div>
 
@@ -71,5 +72,8 @@
     <div class="content-section" id="education"></div>
     <div class="content-section" id="misc"></div>
 </div>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>

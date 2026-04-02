@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
 /* General body styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -17,7 +21,7 @@ body {
 .profile-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding-bottom: 15px;
   border-bottom: 1px solid #e2dede;
 }
@@ -28,9 +32,9 @@ body {
   color: #757171;
 }
 
-.profile-banner {
+/* .profile-banner {
   color: rgb(213, 79, 56);
-}
+} */
 
 .profile-img {
   border-radius: 50%;
@@ -45,15 +49,21 @@ body {
   color: black; /* Change link color to black */
 }
 
-.icon{
-  width: 35px; /* adjust this value to your desired width */
-  height: 35px; /* maintain aspect ratio */
-  padding: 5px;
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
-.resume-icon{
-  width: 50; /* adjust this value to your desired width */
-  height: 35px; /* maintain aspect ratio */
-  padding: 5px;
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: #555555;
+  transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+  color: #111111;
 }
 
 .research {
@@ -125,14 +135,11 @@ body {
 .members {
   margin: 0;
   margin-bottom: 10px;
-  font-size: 16px;
   color: #555;
 }
 
 .description {
-  font-size: 14px;
   color: #666;
-  line-height: 1.6;
 }
 
 .menu {
@@ -148,8 +155,9 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
   border-bottom: 2px solid transparent;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 /* Change background color of buttons on hover */
